@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armor Sets - Monster Hunter Wilds Wiki</title>
+    <meta name="description" content="Best armor sets and build recommendations for Monster Hunter Wilds. Optimize your defense and skills for every weapon type.">
+    <meta name="keywords" content="Monster Hunter Wilds armor, MH Wilds armor sets, best build, defense skills">
+    <link rel="canonical" href="https://mhwilds-wiki.com/armor.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        mh: { 500: '#F97316', 600: '#EA580C', 700: '#C2410C' },
+                        dark: { 900: '#0a0a0a', 800: '#1a1a1a', 700: '#262626' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%); min-height: 100vh; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 40px rgba(59, 130, 246, 0.2); }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <!-- Header -->
+    <header class="bg-dark-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-mh-500 to-mh-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">MH</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">MH Wilds Wiki</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-mh-500 transition-colors">Home</a>
+                    <a href="weapons.html" class="text-gray-300 hover:text-mh-500 transition-colors">Weapons</a>
+                    <a href="monsters.html" class="text-gray-300 hover:text-mh-500 transition-colors">Monsters</a>
+                    <a href="armor.html" class="text-blue-400 hover:text-blue-300 transition-colors font-medium">Armor</a>
+                    <a href="quests.html" class="text-gray-300 hover:text-mh-500 transition-colors">Quests</a>
+                    <a href="systems.html" class="text-gray-300 hover:text-mh-500 transition-colors">Systems</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-900 border-t border-gray-800">
+            <div class="px-4 py-3 space-y-2">
+                <a href="/" class="block text-gray-300 hover:text-mh-500 py-2">Home</a>
+                <a href="weapons.html" class="block text-gray-300 hover:text-mh-500 py-2">Weapons</a>
+                <a href="monsters.html" class="block text-gray-300 hover:text-mh-500 py-2">Monsters</a>
+                <a href="armor.html" class="block text-blue-400 font-medium py-2">Armor</a>
+                <a href="quests.html" class="block text-gray-300 hover:text-mh-500 py-2">Quests</a>
+                <a href="systems.html" class="block text-gray-300 hover:text-mh-500 py-2">Systems</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Page Header -->
+        <div class="mb-8">
+            <h1 class="font-cinzel text-4xl font-bold text-white mb-4">Armor Sets</h1>
+            <p class="text-gray-400 max-w-3xl">
+                Complete armor sets and build recommendations for Monster Hunter Wilds. Find the best skills for your weapon.
+            </p>
+        </div>
+
+        <!-- Armor Summary -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-dark-800/80 rounded-xl border border-blue-500/30 p-4 text-center">
+                <div class="text-3xl font-bold text-blue-400">30+</div>
+                <div class="text-gray-400 text-sm">Armor Sets</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-white">100+</div>
+                <div class="text-gray-400 text-sm">Skill Types</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-white">Layered</div>
+                <div class="text-gray-400 text-sm">Armor Added</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-mh-500">New</div>
+                <div class="text-gray-400 text-sm">TU2 Sets</div>
+            </div>
+        </div>
+
+        <!-- Armor Categories -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Rey Dau Armor -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-yellow-500/20 to-dark-900 flex items-center justify-center">
+                    <span class="text-6xl">⚡</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Rey Dau Armor</h3>
+                    <p class="text-gray-400 text-sm mb-4">Thunder-based skills. Great for thunder weapons.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded">Thunder Attack</span>
+                        <span class="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Ice Resist</span>
+                    </div>
+                    <a href="#" class="text-mh-500 hover:text-mh-400 text-sm">View Set →</a>
+                </div>
+            </div>
+
+            <!-- Lagiacrus Armor -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-blue-500/20 to-dark-900 flex items-center justify-center">
+                    <span class="text-6xl">🌊</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Lagiacrus Armor</h3>
+                    <p class="text-gray-400 text-sm mb-4">Water combat focus. Good for aquatic hunts.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Water Attack</span>
+                        <span class="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Wirebugs</span>
+                    </div>
+                    <a href="#" class="text-mh-500 hover:text-mh-400 text-sm">View Set →</a>
+                </div>
+            </div>
+
+            <!-- Mizutsune Armor -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-pink-500/20 to-dark-900 flex items-center justify-center">
+                    <span class="text-6xl">🫧</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Mizutsune Armor</h3>
+                    <p class="text-gray-400 text-sm mb-4">Bubble techniques and speed bonuses.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-pink-500/20 text-pink-400 text-xs rounded">Bubble</span>
+                        <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">Speed</span>
+                    </div>
+                    <a href="#" class="text-mh-500 hover:text-mh-400 text-sm">View Set →</a>
+                </div>
+            </div>
+
+            <!-- Seregios Armor -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-orange-500/20 to-dark-900 flex items-center justify-center">
+                    <span class="text-6xl">🦅</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Seregios Armor</h3>
+                    <p class="text-gray-400 text-sm mb-4">Focus on raw damage and crit skills.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-red-500/20 text-red-400 text-xs rounded">Critical</span>
+                        <span class="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded">Attack</span>
+                    </div>
+                    <a href="#" class="text-mh-500 hover:text-mh-400 text-sm">View Set →</a>
+                </div>
+            </div>
+
+            <!-- Guardian Armor -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-green-500/20 to-dark-900 flex items-center justify-center">
+                    <span class="text-6xl">🛡️</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Guardian Armor</h3>
+                    <p class="text-gray-400 text-sm mb-4">Starter set for early game defense.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">Defense</span>
+                        <span class="px-2 py-1 bg-gray-500/20 text-gray-400 text-xs rounded">All-Rounder</span>
+                    </div>
+                    <a href="#" class="text-mh-500 hover:text-mh-400 text-sm">View Set →</a>
+                </div>
+            </div>
+
+            <!-- G级别 Special -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-mh-500/50 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-mh-500/30 to-dark-900 flex items-center justify-center">
+                    <span class="text-6xl">⭐</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">G级别 Armor</h3>
+                    <p class="text-gray-400 text-sm mb-4">Master Rank endgame sets with powerful skills.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 bg-mh-500/20 text-mh-500 text-xs rounded">Master Rank</span>
+                        <span class="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Endgame</span>
+                    </div>
+                    <a href="#" class="text-mh-500 hover:text-mh-400 text-sm">View Set →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 border-t border-gray-800 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="w-10 h-10 bg-gradient-to-br from-mh-500 to-mh-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">MH</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white">MH Wilds Wiki</span>
+                </div>
+                <div class="flex space-x-6 text-sm text-gray-400">
+                    <a href="/" class="hover:text-mh-500">Home</a>
+                    <a href="weapons.html" class="hover:text-mh-500">Weapons</a>
+                    <a href="monsters.html" class="hover:text-mh-500">Monsters</a>
+                    <a href="armor.html" class="hover:text-mh-500">Armor</a>
+                    <a href="quests.html" class="hover:text-mh-500">Quests</a>
+                    <a href="systems.html" class="hover:text-mh-500">Systems</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 MH Wilds Wiki. Not affiliated with Capcom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>

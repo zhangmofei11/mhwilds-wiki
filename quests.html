@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Walkthroughs - Monster Hunter Wilds Wiki</title>
+    <meta name="description" content="Complete quest walkthroughs for Monster Hunter Wilds. Main story missions, urgent quests, and side任务攻略.">
+    <meta name="keywords" content="Monster Hunter Wilds quest guide, MH Wilds walkthrough, story mission, urgent quest">
+    <link rel="canonical" href="https://mhwilds-wiki.com/quests.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        mh: { 500: '#F97316', 600: '#EA580C', 700: '#C2410C' },
+                        dark: { 900: '#0a0a0a', 800: '#1a1a1a', 700: '#262626' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%); min-height: 100vh; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 40px rgba(34, 197, 94, 0.2); }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <!-- Header -->
+    <header class="bg-dark-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-mh-500 to-mh-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">MH</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">MH Wilds Wiki</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-mh-500 transition-colors">Home</a>
+                    <a href="weapons.html" class="text-gray-300 hover:text-mh-500 transition-colors">Weapons</a>
+                    <a href="monsters.html" class="text-gray-300 hover:text-mh-500 transition-colors">Monsters</a>
+                    <a href="armor.html" class="text-gray-300 hover:text-mh-500 transition-colors">Armor</a>
+                    <a href="quests.html" class="text-green-400 hover:text-green-300 transition-colors font-medium">Quests</a>
+                    <a href="systems.html" class="text-gray-300 hover:text-mh-500 transition-colors">Systems</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-900 border-t border-gray-800">
+            <div class="px-4 py-3 space-y-2">
+                <a href="/" class="block text-gray-300 hover:text-mh-500 py-2">Home</a>
+                <a href="weapons.html" class="block text-gray-300 hover:text-mh-500 py-2">Weapons</a>
+                <a href="monsters.html" class="block text-gray-300 hover:text-mh-500 py-2">Monsters</a>
+                <a href="armor.html" class="block text-gray-300 hover:text-mh-500 py-2">Armor</a>
+                <a href="quests.html" class="block text-green-400 font-medium py-2">Quests</a>
+                <a href="systems.html" class="block text-gray-300 hover:text-mh-500 py-2">Systems</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Page Header -->
+        <div class="mb-8">
+            <h1 class="font-cinzel text-4xl font-bold text-white mb-4">Quest Walkthroughs</h1>
+            <p class="text-gray-400 max-w-3xl">
+                Complete walkthroughs for all main story missions and key quests in Monster Hunter Wilds.
+            </p>
+        </div>
+
+        <!-- Quest Summary -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-dark-800/80 rounded-xl border border-green-500/30 p-4 text-center">
+                <div class="text-3xl font-bold text-green-400">50+</div>
+                <div class="text-gray-400 text-sm">Key Quests</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-white">7</div>
+                <div class="text-gray-400 text-sm">Story Chapters</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-white">10+</div>
+                <div class="text-gray-400 text-sm">Urgent Quests</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-mh-500">30+</div>
+                <div class="text-gray-400 text-sm">Side Quests</div>
+            </div>
+        </div>
+
+        <!-- Story Quests -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-green-400 mb-6">Story Missions</h2>
+            <div class="space-y-4">
+                <!-- Chapter 1 -->
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-green-400 font-bold">CH1</span>
+                            </div>
+                            <div>
+                                <h3 class="font-cinzel text-lg font-bold text-white mb-2">The Beginning</h3>
+                                <p class="text-gray-400 text-sm mb-3">Your first hunt. Learn the basics of combat and tracking.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-gray-700/50 text-gray-300 text-xs rounded">Tutorial</span>
+                                    <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">~1 Hour</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm font-medium">View Guide →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 2 -->
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-green-400 font-bold">CH2</span>
+                            </div>
+                            <div>
+                                <h3 class="font-cinzel text-lg font-bold text-white mb-2">First Flagship</h3>
+                                <p class="text-gray-400 text-sm mb-3">Encounter Rey Dau for the first time. Prepare for thunder attacks.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-yellow-500/20 text-yellow-400 text-xs rounded">Rey Dau</span>
+                                    <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">~2 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm font-medium">View Guide →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 3 -->
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-green-400 font-bold">CH3</span>
+                            </div>
+                            <div>
+                                <h3 class="font-cinzel text-lg font-bold text-white mb-2">The Deep Jungle</h3>
+                                <p class="text-gray-400 text-sm mb-3">Explore the new biome. Face aquatic monsters.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">Aquatic</span>
+                                    <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">~3 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm font-medium">View Guide →</a>
+                    </div>
+                </div>
+
+                <!-- Chapter 4 -->
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <span class="text-green-400 font-bold">CH4</span>
+                            </div>
+                            <div>
+                                <h3 class="font-cinzel text-lg font-bold text-white mb-2">Elder Dragon Rising</h3>
+                                <p class="text-gray-400 text-sm mb-3">Your first Elder Dragon encounter. High difficulty warning.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Elder</span>
+                                    <span class="px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded">~4 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm font-medium">View Guide →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Urgent Quests -->
+        <section>
+            <h2 class="font-cinzel text-2xl font-bold text-white mb-6">Urgent Quests</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <div class="text-xs text-red-500 uppercase tracking-wide mb-2">Urgent</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">First Urgent Quest</h3>
+                    <p class="text-gray-400 text-sm mb-4">Complete this to advance to the next rank.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-500">HR 1+</span>
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm">View →</a>
+                    </div>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <div class="text-xs text-red-500 uppercase tracking-wide mb-2">Urgent</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">The Threat Returns</h3>
+                    <p class="text-gray-400 text-sm mb-4">A monster returns stronger than before.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-500">HR 5+</span>
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm">View →</a>
+                    </div>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <div class="text-xs text-red-500 uppercase tracking-wide mb-2">Urgent</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Master Rank Unlocked</h3>
+                    <p class="text-gray-400 text-sm mb-4">Enter Master Rank with new challenges.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-500">HR 8+</span>
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm">View →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 border-t border-gray-800 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="w-10 h-10 bg-gradient-to-br from-mh-500 to-mh-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">MH</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white">MH Wilds Wiki</span>
+                </div>
+                <div class="flex space-x-6 text-sm text-gray-400">
+                    <a href="/" class="hover:text-mh-500">Home</a>
+                    <a href="weapons.html" class="hover:text-mh-500">Weapons</a>
+                    <a href="monsters.html" class="hover:text-mh-500">Monsters</a>
+                    <a href="armor.html" class="hover:text-mh-500">Armor</a>
+                    <a href="quests.html" class="hover:text-mh-500">Quests</a>
+                    <a href="systems.html" class="hover:text-mh-500">Systems</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 MH Wilds Wiki. Not affiliated with Capcom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>

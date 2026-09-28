@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Guide - Monster Hunter Wilds Wiki</title>
+    <meta name="description" content="Complete monster guide for Monster Hunter Wilds. All monster weaknesses, drops, habitats, and hunt strategies.">
+    <meta name="keywords" content="Monster Hunter Wilds monsters, MH Wilds monster guide, monster weaknesses, elder dragons">
+    <link rel="canonical" href="https://mhwilds-wiki.com/monsters.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        mh: { 500: '#F97316', 600: '#EA580C', 700: '#C2410C' },
+                        dark: { 900: '#0a0a0a', 800: '#1a1a1a', 700: '#262626' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%); min-height: 100vh; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 40px rgba(220, 38, 38, 0.2); }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <!-- Header -->
+    <header class="bg-dark-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-mh-500 to-mh-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">MH</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">MH Wilds Wiki</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-mh-500 transition-colors">Home</a>
+                    <a href="weapons.html" class="text-gray-300 hover:text-mh-500 transition-colors">Weapons</a>
+                    <a href="monsters.html" class="text-red-500 hover:text-red-400 transition-colors font-medium">Monsters</a>
+                    <a href="armor.html" class="text-gray-300 hover:text-mh-500 transition-colors">Armor</a>
+                    <a href="quests.html" class="text-gray-300 hover:text-mh-500 transition-colors">Quests</a>
+                    <a href="systems.html" class="text-gray-300 hover:text-mh-500 transition-colors">Systems</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-900 border-t border-gray-800">
+            <div class="px-4 py-3 space-y-2">
+                <a href="/" class="block text-gray-300 hover:text-mh-500 py-2">Home</a>
+                <a href="weapons.html" class="block text-gray-300 hover:text-mh-500 py-2">Weapons</a>
+                <a href="monsters.html" class="block text-red-500 font-medium py-2">Monsters</a>
+                <a href="armor.html" class="block text-gray-300 hover:text-mh-500 py-2">Armor</a>
+                <a href="quests.html" class="block text-gray-300 hover:text-mh-500 py-2">Quests</a>
+                <a href="systems.html" class="block text-gray-300 hover:text-mh-500 py-2">Systems</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Page Header -->
+        <div class="mb-8">
+            <h1 class="font-cinzel text-4xl font-bold text-white mb-4">Monster Guide</h1>
+            <p class="text-gray-400 max-w-3xl">
+                Complete database of all monsters in Monster Hunter Wilds. Learn weaknesses, drops, and hunt strategies.
+            </p>
+        </div>
+
+        <!-- Monster Summary -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-dark-800/80 rounded-xl border border-red-500/30 p-4 text-center">
+                <div class="text-3xl font-bold text-red-500">40+</div>
+                <div class="text-gray-400 text-sm">Total Monsters</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-white">10</div>
+                <div class="text-gray-400 text-sm">Elder Dragons</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-white">4</div>
+                <div class="text-gray-400 text-sm">Flagship Monsters</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-4 text-center">
+                <div class="text-3xl font-bold text-mh-500">New</div>
+                <div class="text-gray-400 text-sm">Title Update Monsters</div>
+            </div>
+        </div>
+
+        <!-- Filter -->
+        <div class="bg-dark-800/60 rounded-xl border border-gray-700 p-6 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <label class="block text-gray-400 text-sm mb-2">Monster Type</label>
+                    <select class="w-full bg-dark-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:border-mh-500 focus:outline-none">
+                        <option value="all">All Types</option>
+                        <option value="wyvern">Flying Wyvern</option>
+                        <option value="leviathan">Leviathan</option>
+                        <option value="elder">Elder Dragon</option>
+                        <option value="brute">Brute Wyvern</option>
+                        <option value="bird">Bird Wyvern</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-gray-400 text-sm mb-2">Element</label>
+                    <select class="w-full bg-dark-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:border-mh-500 focus:outline-none">
+                        <option value="all">All Elements</option>
+                        <option value="fire">Fire</option>
+                        <option value="water">Water</option>
+                        <option value="thunder">Thunder</option>
+                        <option value="ice">Ice</option>
+                        <option value="dragon">Dragon</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-gray-400 text-sm mb-2">Threat Level</label>
+                    <select class="w-full bg-dark-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:border-mh-500 focus:outline-none">
+                        <option value="all">All Levels</option>
+                        <option value="low">Low Rank</option>
+                        <option value="high">High Rank</option>
+                        <option value="master">Master Rank</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monster Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Rey Dau -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-yellow-500/20 to-dark-900 flex items-center justify-center relative">
+                    <span class="text-7xl">⚡</span>
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-red-500/30 text-red-400 text-xs rounded-full">Flagship</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Rey Dau</h3>
+                    <p class="text-gray-400 text-sm mb-4">The first flagship monster. Master of thunder attacks.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Element:</span>
+                            <span class="text-yellow-400">Thunder</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Weakness:</span>
+                            <span class="text-blue-400">Ice</span>
+                        </div>
+                    </div>
+                    <a href="#" class="block text-center bg-mh-500/20 text-mh-500 py-2 rounded-lg hover:bg-mh-500/30 transition-colors">View Details →</a>
+                </div>
+            </div>
+
+            <!-- Lagiacrus -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-blue-500/20 to-dark-900 flex items-center justify-center relative">
+                    <span class="text-7xl">🌊</span>
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-blue-500/30 text-blue-400 text-xs rounded-full">TU2</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Lagiacrus</h3>
+                    <p class="text-gray-400 text-sm mb-4">Returning Leviathan with aquatic combat abilities.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Element:</span>
+                            <span class="text-blue-400">Thunder</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Weakness:</span>
+                            <span class="text-yellow-400">Dragon</span>
+                        </div>
+                    </div>
+                    <a href="#" class="block text-center bg-mh-500/20 text-mh-500 py-2 rounded-lg hover:bg-mh-500/30 transition-colors">View Details →</a>
+                </div>
+            </div>
+
+            <!-- Mizutsune -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-pink-500/20 to-dark-900 flex items-center justify-center relative">
+                    <span class="text-7xl">🫧</span>
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-pink-500/30 text-pink-400 text-xs rounded-full">TU1</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Mizutsune</h3>
+                    <p class="text-gray-400 text-sm mb-4">Aquatic Leviathan using bubble techniques.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Element:</span>
+                            <span class="text-pink-400">Water</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Weakness:</span>
+                            <span class="text-red-400">Fire</span>
+                        </div>
+                    </div>
+                    <a href="#" class="block text-center bg-mh-500/20 text-mh-500 py-2 rounded-lg hover:bg-mh-500/30 transition-colors">View Details →</a>
+                </div>
+            </div>
+
+            <!-- Gogmazios -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-gray-500/20 to-dark-900 flex items-center justify-center relative">
+                    <span class="text-7xl">💀</span>
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-purple-500/30 text-purple-400 text-xs rounded-full">Elder</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Gogmazios</h3>
+                    <p class="text-gray-400 text-sm mb-4">Elder Dragon covered in explosive gunpowder.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Element:</span>
+                            <span class="text-gray-400">Fire</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Weakness:</span>
+                            <span class="text-blue-400">Water</span>
+                        </div>
+                    </div>
+                    <a href="#" class="block text-center bg-mh-500/20 text-mh-500 py-2 rounded-lg hover:bg-mh-500/30 transition-colors">View Details →</a>
+                </div>
+            </div>
+
+            <!-- Seregios -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-orange-500/20 to-dark-900 flex items-center justify-center relative">
+                    <span class="text-7xl">🦅</span>
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-orange-500/30 text-orange-400 text-xs rounded-full">TU2</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Seregios</h3>
+                    <p class="text-gray-400 text-sm mb-4">Flying Wyvern that throws scale shots.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Type:</span>
+                            <span class="text-orange-400">Piercing</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Weakness:</span>
+                            <span class="text-blue-400">Ice</span>
+                        </div>
+                    </div>
+                    <a href="#" class="block text-center bg-mh-500/20 text-mh-500 py-2 rounded-lg hover:bg-mh-500/30 transition-colors">View Details →</a>
+                </div>
+            </div>
+
+            <!-- Zoh Shia -->
+            <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-teal-500/20 to-dark-900 flex items-center justify-center relative">
+                    <span class="text-7xl">🐲</span>
+                    <span class="absolute top-3 right-3 px-3 py-1 bg-teal-500/30 text-teal-400 text-xs rounded-full">TU1</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-cinzel text-xl font-bold text-white mb-2">Zoh Shia</h3>
+                    <p class="text-gray-400 text-sm mb-4">Amphibious Leviathan with lava attacks.</p>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Element:</span>
+                            <span class="text-red-400">Fire</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Weakness:</span>
+                            <span class="text-blue-400">Water</span>
+                        </div>
+                    </div>
+                    <a href="#" class="block text-center bg-mh-500/20 text-mh-500 py-2 rounded-lg hover:bg-mh-500/30 transition-colors">View Details →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 border-t border-gray-800 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="w-10 h-10 bg-gradient-to-br from-mh-500 to-mh-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">MH</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white">MH Wilds Wiki</span>
+                </div>
+                <div class="flex space-x-6 text-sm text-gray-400">
+                    <a href="/" class="hover:text-mh-500">Home</a>
+                    <a href="weapons.html" class="hover:text-mh-500">Weapons</a>
+                    <a href="monsters.html" class="hover:text-mh-500">Monsters</a>
+                    <a href="armor.html" class="hover:text-mh-500">Armor</a>
+                    <a href="quests.html" class="hover:text-mh-500">Quests</a>
+                    <a href="systems.html" class="hover:text-mh-500">Systems</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 MH Wilds Wiki. Not affiliated with Capcom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
