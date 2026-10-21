@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mhwilds-wiki.com/sitemap.xml
